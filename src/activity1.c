@@ -1,4 +1,4 @@
-#include "activity1.h"
+#include <activity1.h>
 
 void activity1_init(){
     
@@ -14,9 +14,3 @@ void activity1_init(){
     PORTB = PORTB |  (1<<PB2);
 }
 
-void activity1_loop(){
-        if( !(PINB & (1<<PB1)) && !(PINB & (1<<PB2)))
-            PORTB = PORTB | (1<<PB0);
-        else
-            PORTB = PORTB & ~(1<<PB0);
-}

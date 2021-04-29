@@ -5,6 +5,4 @@
 
 void activity1_init();
 
-void activity1_loop();
-
 #endif
