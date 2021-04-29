@@ -1,10 +1,13 @@
-PROJ_NAME = activity
+PROJ_NAME = Activity
 
 BUILD_DIR = Build
 
 # All Source code files
-MAIN = project_main.c
-SRC = $(wildcard src/*.c) $(MAIN)
+SRC = src/activity1.c\
+src/activity2.c\
+src/activity3.c\
+project_main.c\
+
 
 # All header file paths
 INC = -I inc
@@ -33,7 +36,7 @@ endif
 
 all:$(BUILD_DIR)
 # Compile the code and generate the ELF file
-	$(CC) -g -Wall -Os -mmcu=atmega328  $(INC) $(SRC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).elf) -DF_CPU=16000000UL
+	$(CC) -g -Wall -Os -mmcu=atmega328 -DF_CPU=16000000UL  $(INC) $(SRC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).elf)
 
 $(BUILD_DIR):
 # Create directory to store the built files
@@ -41,7 +44,7 @@ $(BUILD_DIR):
 
 analysis: $(SRC)
 # Analyse the code using Cppcheck command line utility
-	cppcheck --enable=all --platform=avr8 $^
+	cppcheck --enable=all $^
 
 doc:
 # Build the code code documentation using Doxygen command line utility

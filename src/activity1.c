@@ -1,4 +1,4 @@
-#include <activity1.h>
+#include "activity1.h"
 
 void activity1_init(){
     
@@ -6,8 +6,8 @@ void activity1_init(){
     PORTB = PORTB & ~(1<<PB0);
 
     //Set B1 as Input and initialize it to high
-    DDRB = DDRB & ~(1<<PB1);
-    PORTB = PORTB |  (1<<PB1);
+    DDRB = DDRB & ~(1<<PB3);
+    PORTB = PORTB |  (1<<PB3);
 
     //Set B2 as Input and initialize it to high
     DDRB = DDRB & ~(1<<PB2);
