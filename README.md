@@ -1,6 +1,4 @@
-# Embedded C Activities with Continuous Integration and Code Quality
-
-
+# Embedded C Activities
 
 #### CI and Code Quality
 
