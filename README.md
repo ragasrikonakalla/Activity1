@@ -1,14 +1,4 @@
-<<<<<<< HEAD
 # Embedded C Activities
-
-#### CI and Code Quality
-
-
-[![Compile-Linux](https://github.com/ragasrikonakalla/Activity1/actions/workflows/Compile.yml/badge.svg?branch=master)](https://github.com/ragasrikonakalla/Activity1/actions/workflows/Compile.yml)   [![Cppcheck](https://github.com/ragasrikonakalla/Activity1/actions/workflows/CodeQulaity.yml/badge.svg?branch=master)](https://github.com/ragasrikonakalla/Activity1/actions/workflows/CodeQulaity.yml)
-
-=======
-# Embedded C Activities 
-
 ## CI and Code Quality
 |Build|Cppcheck|Codacy|
 |:--:|:--:|:--:|
@@ -16,4 +6,3 @@
 
 # Activity
 ![final](https://user-images.githubusercontent.com/39005938/116681123-2c7fe800-a9ca-11eb-900a-b161d0af1eda.PNG)
->>>>>>> 7ba2ecb2488d01ca240f966a9342eba2b81ce3a6
