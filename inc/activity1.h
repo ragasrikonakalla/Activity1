@@ -17,8 +17,8 @@
 
 #define LED_ON (PORTB |= (1<<PB0))    //LED ON 
 #define LED_OFF (PORTB &=~(1<<PB0))   //LED OFF
-#define SENSOR_ON !(PINB&(1<<PD2))     // Switch1 ON
-#define HEATER_ON !(PINB&(1<<PD3))     // Switch2 ON
+#define SENSOR_ON !(PINB&(1<<PB2))     // Switch1 ON
+#define HEATER_ON !(PINB&(1<<PB3))     // Switch2 ON
 
 void activity1_init();
 /**
