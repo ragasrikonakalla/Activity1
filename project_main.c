@@ -1,7 +1,7 @@
 #include <avr/io.h>
 #include<util/delay.h>
 
-#include "activity1.h" // B1, B2 input pins to high results B0 output pin to high
+#include "activity1.h" // B3, B2 input pins to high results B0 output pin to high
 #include "activity2.h" // AC0 is used as input to vary temperature 
 #include "activity3.h" // OC1A (B1) to output pwm signal
 #include "activity4.h" // UART0 is used to actuate the amount of heat
