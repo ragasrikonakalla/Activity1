@@ -5,7 +5,7 @@ void activity1_init(){
     DDRB = DDRB |  (1<<PB0);
     PORTB = PORTB & ~(1<<PB0);
 
-    //Set B1 as Input and initialize it to high
+    //Set B3 as Input and initialize it to high
     DDRB = DDRB & ~(1<<PB3);
     PORTB = PORTB |  (1<<PB3);
 
